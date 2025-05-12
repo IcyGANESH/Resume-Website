@@ -18,4 +18,4 @@ The resume is created using basic web technologies including:
 - Clean, modern design with a focus on simplicity
 
 #### Live Link
-Deployed on Vercel: 
+Deployed on Vercel: https://resume-website-kappa-ten.vercel.app/
