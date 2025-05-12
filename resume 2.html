@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganesh Gupta - Tech Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #00ffe1;
+      --bg-color: #0a0a0a;
+      --text-color: #e0e0e0;
+      --section-bg: rgba(28, 28, 28, 0.8);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Share Tech Mono', monospace;
+      background-color: var(--bg-color);
+      background-image: url('https://wallpapercave.com/wp/wp2465927.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      color: var(--primary-color);
+      padding: 40px 0;
+      text-align: center;
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 25px auto;
+      padding: 25px;
+      background: var(--section-bg);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 255, 225, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(5px);
+    }
+
+    section:hover {
+      transform: scale(1.01);
+      box-shadow: 0 0 25px rgba(0, 255, 225, 0.3);
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 6px;
+      margin-bottom: 15px;
+      font-size: 1.6rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact a {
+      margin-right: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+      background: rgba(0, 0, 0, 0.8);
+      margin-top: 20px;
+    }
+
+    /* Animated circuit background (optional aesthetic) */
+    .animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(135deg, #0a0a0a, #02121d);
+  overflow: hidden;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.node {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #00ffe1;
+  border-radius: 50%;
+  animation: float linear infinite;
+  opacity: 0.6;
+}
+
+  </style>
+</head>
+<body>
+  <div class="animated-bg">
+  <!-- Generating multiple floating tech nodes -->
+  <script>
+    for (let i = 0; i < 40; i++) {
+      const node = document.createElement('div');
+      node.className = 'node';
+      node.style.left = Math.random() * 100 + 'vw';
+      node.style.top = (Math.random() * 100 + 100) + 'vh';
+      node.style.animationDuration = (Math.random() * 10 + 10) + 's';
+      node.style.animationDelay = Math.random() * 5 + 's';
+      document.querySelector('.animated-bg').appendChild(node);
+    }
+  </script>
+</div>
+
+
+  <header>
+    <h1>GANESH GUPTA</h1>
+    <p>|| अंतः अस्ति प्रारंभः ||<br>AI & Cybersecurity Enthusiast <br>
+    <h5 style="color: white;">Working on myself, by myself, for myself</h5>
+</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am a 1<sup>st</sup> year B.Tech student at KIET Group of Institutions, pursuing Computer Science and Engineering with a specialization in Artificial Intelligence (CSE-AI). I am passionate about AI, Machine Learning, and Cybersecurity. I love building real-world projects and continuously learning new technologies.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, C, Kotlin</li>
+      <li>Python libraries: Numpy, Pandas, Open-CV, Matplotlib</li>
+      <li>HTML, CSS</li>
+      <li>Git, GitHub</li>
+    </ul>
+  </section>
+
+  <section>
+  <h2>Education</h2>
+  <p><strong>B.Tech in Computer Science and Engineering (AI)</strong><br/>KIET Group of Institutions, 2028</p>
+  <p><strong>1<sup>st</sup> Semester CGPA – 9.0</strong></p>
+  <p><strong>Class 12th – 87.2%</strong><br/>Smt. Draupadi Devi Tripathi Intermediate College</p>
+  <p><strong>Class 10th – 93.6%</strong><br/>Smt. Draupadi Devi Tripathi Intermediate College</p>
+</section>
+
+
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>PARK_EYE</strong> – A Django-based vehicle parking management system using OCR for license plate detection and logging.<br/>
+        <a href="https://github.com/IcyGANESH/PARK_EYE" target="_blank">GitHub Repository</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Achievements & Certifications</h2>
+    <ul>
+      <li><strong>AI For Everyone</strong> – DeepLearning.AI<br/>Issued: Mar 2025 | Credential ID: NLZTNVWMKEVY<br/><a href="https://www.coursera.org/account/accomplishments/verify/NLZTNWVMKEVY" target="_blank">View Credential</a></li>
+      <li><strong>Cybersecurity Analyst Job Simulation</strong> – Tata Group (Forage)<br/>Issued: Mar 2025 | Credential ID: XAGn9RapkRAvsTCsy<br/><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_PA43xpZQX3oWrNhz9_1740940865139_completion_certificate.pdf" target="_blank">View Credential</a></li>
+      <li><strong>Cybersecurity Fundamentals</strong> – IBM<br/>Issued: Feb 2025<br/><a href="https://www.credly.com/badges/c827b320-ddc5-4047-8466-f6a83d2bab43/linked_in_profile" target="_blank">View Credential</a></li>
+      <li><strong>Volunteer – Smart India Hackathon</strong><br/>Issued: Dec 2024 (1 month)<br/><a href="https://app.truscholar.io/profile?credId=676e881eb25f4e68efd411b7" target="_blank">View Credential</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p class="contact">
+  Email: <a href="mailto:ganeshg17m@gmail.com">ganeshg17m@gmail.com</a><br/>
+  Phone: <a href="tel:+91XXXXXXXXXX">+91-9044417261</a><br/>
+  LinkedIn: <a href="https://www.linkedin.com/in/ganesh-gupta-a98921264/" target="_blank">GANESH-GUPTA</a><br/>
+  GitHub: <a href="https://github.com/IcyGANESH" target="_blank">IcyGANESH</a>
+</p>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Ganesh Gupta. All rights reserved.
+  </footer>
+</body>
+</html>
